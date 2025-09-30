@@ -41,16 +41,48 @@ Build Storybook for production:
 npm run build-storybook
 ```
 
-## Components
+## Adding Components
 
-### Button
+1. Create your component in `src/components/`
+2. Export it from `src/components/index.ts`
+3. Create stories in `stories/` directory
+4. Run `npm run storybook` to see your component
 
-A versatile button component with multiple variants and sizes.
+### Example Component Structure
+
+```
+src/components/
+├── MyComponent/
+│   ├── MyComponent.tsx
+│   ├── MyComponent.css
+│   └── index.ts
+└── index.ts
+```
+
+### Example Story
 
 ```tsx
-import { Button } from './src/components';
+// stories/MyComponent.stories.tsx
+import type { Meta, StoryObj } from '@storybook/react';
+import { MyComponent } from '../src/components/MyComponent';
 
-<Button primary size="large" label="Click me" />
+const meta: Meta<typeof MyComponent> = {
+  title: 'Example/MyComponent',
+  component: MyComponent,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+};
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+  args: {
+    // your props here
+  },
+};
 ```
 
 ## Storybook
