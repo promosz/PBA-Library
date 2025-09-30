@@ -1,0 +1,273 @@
+/* PBA Design Tokens - Kolory z Figma */
+:root {
+  /* ===== PODSTAWOWE KOLORY TEKSTU ===== */
+  --color-text-default: #172b4d;
+  --color-text-subtle: #44546f;
+  --color-text-subtlest: #626f86;
+  --color-text-disabled: #091e424f;
+  --color-text-inverse: #ffffff;
+  
+  /* ===== KOLORY SEMANTYCZNE TEKSTU ===== */
+  --color-text-brand: #0c66e4;
+  --color-text-selected: #0c66e4;
+  --color-text-danger: #ae2e24;
+  --color-text-warning: #a54800;
+  --color-text-success: #216e4e;
+  --color-text-discovery: #5e4db2;
+  --color-text-information: #0055cc;
+  
+  /* ===== PALETA AKCENTÓW ===== */
+  --color-accent-red-default: #ae2e24;
+  --color-accent-red-bolder: #5d1f1a;
+  --color-accent-orange-default: #a54800;
+  --color-accent-orange-bolder: #702e00;
+  --color-accent-yellow-default: #7f5f01;
+  --color-accent-yellow-bolder: #533f04;
+  --color-accent-lime-default: #4c6b1f;
+  --color-accent-lime-bolder: #37471f;
+  --color-accent-green-default: #216e4e;
+  --color-accent-green-bolder: #164b35;
+  --color-accent-teal-default: #206a83;
+  --color-accent-teal-bolder: #164555;
+  --color-accent-blue-default: #0055cc;
+  --color-accent-blue-bolder: #09326c;
+  --color-accent-purple-default: #5e4db2;
+  --color-accent-purple-bolder: #352c63;
+  --color-accent-magenta-default: #943d73;
+  --color-accent-magenta-bolder: #50253f;
+  --color-accent-gray-default: #44546f;
+  --color-accent-gray-bolder: #091e42;
+  
+  /* ===== KOLORY LINKÓW ===== */
+  --color-link-default: #0c66e4;
+  --color-link-pressed: #0055cc;
+  --color-link-visited-default: #5e4db2;
+  --color-link-visited-pressed: #352c63;
+  
+  /* ===== KOLORY IKON ===== */
+  --color-icon-default: #44546f;
+  --color-icon-subtle: #626f86;
+  --color-icon-inverse: #ffffff;
+  --color-icon-disabled: #091e424f;
+  --color-icon-selected: #0c66e4;
+  --color-icon-brand: #0c66e4;
+  --color-icon-danger: #c9372c;
+  --color-icon-warning: #e56910;
+  --color-icon-success: #22a06b;
+  --color-icon-discovery: #8270db;
+  --color-icon-information: #1d7afc;
+  
+  /* ===== PODSTAWOWE KOLORY TŁA ===== */
+  --color-background-surface-default: #ffffff;
+  --color-background-surface-hovered: #f1f2f4;
+  --color-background-surface-pressed: #dcdfe4;
+  --color-background-surface-overlay: #ffffff;
+  --color-background-surface-raised: #ffffff;
+  --color-background-surface-sunken: #f7f8f9;
+  --color-background-neutral-default: #091e420f;
+  --color-background-neutral-hovered: #091e4224;
+  --color-background-neutral-pressed: #091e424f;
+  --color-background-neutral-bold-default: #44546f;
+  --color-background-neutral-bold-hovered: #2c3e5d;
+  --color-background-neutral-bold-pressed: #172b4d;
+  --color-background-disabled: #091e4208;
+  --color-background-input-default: #ffffff;
+  --color-background-input-hovered: #f7f8f9;
+  --color-background-input-pressed: #ffffff;
+  
+  /* ===== TŁA SEMANTYCZNE ===== */
+  --color-background-danger-default: #ffdada;
+  --color-background-danger-hovered: #ffd5d2;
+  --color-background-danger-pressed: #fd9891;
+  --color-background-danger-bold-default: #c9372c;
+  --color-background-danger-bold-hovered: #ae2e24;
+  --color-background-danger-bold-pressed: #5d1f1a;
+  
+  --color-background-warning-default: #fff7d6;
+  --color-background-warning-hovered: #f8e6a0;
+  --color-background-warning-pressed: #f5cd47;
+  --color-background-warning-bold-default: #f5cd47;
+  --color-background-warning-bold-hovered: #e2b203;
+  --color-background-warning-bold-pressed: #cf9f02;
+  
+  --color-background-success-default: #dcfff1;
+  --color-background-success-hovered: #baf3db;
+  --color-background-success-pressed: #7ee2b8;
+  --color-background-success-bold-default: #1f845a;
+  --color-background-success-bold-hovered: #216e4e;
+  --color-background-success-bold-pressed: #164b35;
+  
+  --color-background-discovery-default: #f3f0ff;
+  --color-background-discovery-hovered: #dfd8fd;
+  --color-background-discovery-pressed: #b8acf6;
+  --color-background-discovery-bold-default: #6e5dc6;
+  --color-background-discovery-bold-hovered: #5e4db2;
+  --color-background-discovery-bold-pressed: #352c63;
+  
+  --color-background-information-default: #e9f2ff;
+  --color-background-information-hovered: #cce0ff;
+  --color-background-information-pressed: #85b8ff;
+  --color-background-information-bold-default: #0c66e4;
+  --color-background-information-bold-hovered: #0055cc;
+  --color-background-information-bold-pressed: #09326c;
+  
+  --color-background-brand-subtlest-default: #e9f2ff;
+  --color-background-brand-subtlest-hovered: #cce0ff;
+  --color-background-brand-subtlest-pressed: #85b8ff;
+  --color-background-brand-bold-hovered: #0055cc;
+  --color-background-brand-bold-pressed: #09326c;
+  --color-background-brand-boldest-default: #1c2b41;
+  --color-background-brand-boldest-hovered: #09326c;
+  --color-background-brand-boldest-pressed: #0055cc;
+  
+  --color-background-selected-default: #e9f2ff;
+  --color-background-selected-hovered: #cce0ff;
+  --color-background-selected-pressed: #85b8ff;
+  --color-background-selected-bold-default: #0c66e4;
+  --color-background-selected-bold-hovered: #0055cc;
+  --color-background-selected-bold-pressed: #09326c;
+  
+  /* ===== TŁA AKCENTÓW - CZERWONE ===== */
+  --color-background-accent-red-subtlest-default: #ffeceb;
+  --color-background-accent-red-subtlest-hovered: #ffd5d2;
+  --color-background-accent-red-subtlest-pressed: #fd9891;
+  --color-background-accent-red-subtler-default: #ffd5d2;
+  --color-background-accent-red-subtler-hovered: #fd9891;
+  --color-background-accent-red-subtler-pressed: #f87168;
+  --color-background-accent-red-subtle-default: #f87168;
+  --color-background-accent-red-subtle-hovered: #fd9891;
+  --color-background-accent-red-subtle-pressed: #ffd5d2;
+  --color-background-accent-red-bolder-default: #c9372c;
+  --color-background-accent-red-bolder-hovered: #ae2e24;
+  --color-background-accent-red-bolder-pressed: #5d1f1a;
+  
+  /* ===== TŁA AKCENTÓW - NIEBIESKIE ===== */
+  --color-background-accent-blue-subtlest-default: #e9f2ff;
+  --color-background-accent-blue-subtlest-hovered: #cce0ff;
+  --color-background-accent-blue-subtlest-pressed: #85b8ff;
+  --color-background-accent-blue-subtler-default: #cce0ff;
+  --color-background-accent-blue-subtler-hovered: #85b8ff;
+  --color-background-accent-blue-subtler-pressed: #579dff;
+  --color-background-accent-blue-subtle-default: #579dff;
+  --color-background-accent-blue-subtle-hovered: #85b8ff;
+  --color-background-accent-blue-subtle-pressed: #cce0ff;
+  --color-background-accent-blue-bolder-default: #0c66e4;
+  --color-background-accent-blue-bolder-hovered: #0055cc;
+  --color-background-accent-blue-bolder-pressed: #09326c;
+  
+  /* ===== TŁA AKCENTÓW - ZIELONE ===== */
+  --color-background-accent-green-subtlest-default: #dcfff1;
+  --color-background-accent-green-subtlest-hovered: #baf3db;
+  --color-background-accent-green-subtlest-pressed: #7ee2b8;
+  --color-background-accent-green-subtler-default: #baf3db;
+  --color-background-accent-green-subtler-hovered: #7ee2b8;
+  --color-background-accent-green-subtler-pressed: #4bce97;
+  --color-background-accent-green-subtle-default: #4bce97;
+  --color-background-accent-green-subtle-hovered: #7ee2b8;
+  --color-background-accent-green-subtle-pressed: #baf3db;
+  --color-background-accent-green-bolder-default: #1f845a;
+  --color-background-accent-green-bolder-hovered: #216e4e;
+  --color-background-accent-green-bolder-pressed: #164b35;
+  
+  /* ===== KOLORY RAMEK ===== */
+  --color-border-default: #091e4224;
+  --color-border-default-bold: #59636e;
+  --color-border-bold: #758195;
+  --color-border-inverse: #ffffff;
+  --color-border-disabled: #091e420f;
+  --color-border-focused: #388bff;
+  --color-border-selected: #0c66e4;
+  --color-border-input: #8590a2;
+  --color-border-brand: #0c66e4;
+  --color-border-danger: #e2483d;
+  --color-border-warning: #e56910;
+  --color-border-success: #22a06b;
+  --color-border-discovery: #8270db;
+  --color-border-information: #1d7afc;
+  
+  /* ===== RAMKI AKCENTÓW ===== */
+  --color-border-accent-red: #e2483d;
+  --color-border-accent-orange: #e56910;
+  --color-border-accent-yellow: #b38600;
+  --color-border-accent-lime: #6a9a23;
+  --color-border-accent-green: #22a06b;
+  --color-border-accent-teal: #2898bd;
+  --color-border-accent-blue: #1d7afc;
+  --color-border-accent-purple: #8270db;
+  --color-border-accent-magenta: #cd519d;
+  --color-border-accent-gray: #758195;
+  
+  /* ===== SPACING ===== */
+  --space-100: 8px;
+  --space-200: 16px;
+  
+  /* ===== ELEVATION & SHADOWS ===== */
+  --elevation-surface-default: #ffffff;
+  --elevation-surface-hovered: #f1f2f4;
+  --elevation-surface-pressed: #dcdfe4;
+  --elevation-surface-overlay-default: #ffffff;
+  --elevation-surface-overlay-hovered: #f1f2f4;
+  --elevation-surface-overlay-pressed: #dcdfe4;
+  --elevation-surface-raised-default: #ffffff;
+  --elevation-surface-raised-hovered: #f1f2f4;
+  --elevation-surface-raised-pressed: #dcdfe4;
+  --elevation-surface-sunken-default: #f7f8f9;
+  --elevation-shadow-overflow-perimeter: #091e421f;
+  --elevation-shadow-overflow-spread: #091e4229;
+  
+  /* ===== DODATKOWE KOLORY ===== */
+  --color-blanket-default: #091e427d;
+  --color-blanket-selected: #388bff14;
+  --color-blanket-danger: #ef5c4814;
+  --color-interaction-hovered: #00000029;
+  --color-interaction-pressed: #00000052;
+  --color-skeleton-default: #091e420f;
+  --color-skeleton-subtle: #091e4208;
+  --color-background-inverse-subtle-default: #00000029;
+  --color-background-inverse-subtle-hovered: #0000003d;
+  --color-background-inverse-subtle-pressed: #00000052;
+}
+
+/* ===== KLASY POMOCNICZE ===== */
+
+/* Kolory tekstu */
+.text-default { color: var(--color-text-default); }
+.text-subtle { color: var(--color-text-subtle); }
+.text-subtlest { color: var(--color-text-subtlest); }
+.text-disabled { color: var(--color-text-disabled); }
+.text-inverse { color: var(--color-text-inverse); }
+.text-brand { color: var(--color-text-brand); }
+.text-danger { color: var(--color-text-danger); }
+.text-warning { color: var(--color-text-warning); }
+.text-success { color: var(--color-text-success); }
+.text-discovery { color: var(--color-text-discovery); }
+.text-information { color: var(--color-text-information); }
+
+/* Kolory tła */
+.bg-surface { background-color: var(--color-background-surface-default); }
+.bg-surface-hovered { background-color: var(--color-background-surface-hovered); }
+.bg-surface-pressed { background-color: var(--color-background-surface-pressed); }
+.bg-neutral { background-color: var(--color-background-neutral-default); }
+.bg-danger { background-color: var(--color-background-danger-default); }
+.bg-warning { background-color: var(--color-background-warning-default); }
+.bg-success { background-color: var(--color-background-success-default); }
+.bg-discovery { background-color: var(--color-background-discovery-default); }
+.bg-information { background-color: var(--color-background-information-default); }
+.bg-brand { background-color: var(--color-background-brand-subtlest-default); }
+
+/* Kolory ramek */
+.border-default { border-color: var(--color-border-default); }
+.border-bold { border-color: var(--color-border-bold); }
+.border-focused { border-color: var(--color-border-focused); }
+.border-selected { border-color: var(--color-border-selected); }
+.border-danger { border-color: var(--color-border-danger); }
+.border-warning { border-color: var(--color-border-warning); }
+.border-success { border-color: var(--color-border-success); }
+.border-discovery { border-color: var(--color-border-discovery); }
+.border-information { border-color: var(--color-border-information); }
+
+/* Spacing */
+.spacing-100 { margin: var(--space-100); }
+.spacing-200 { margin: var(--space-200); }
+.padding-100 { padding: var(--space-100); }
+.padding-200 { padding: var(--space-200); }
