@@ -1,0 +1,148 @@
+/* Button Component Styles based on Figma design */
+
+.pba-button {
+  /* Base button styles */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Size variants */
+.pba-button--small {
+  font-size: 12px;
+  padding: 4px 16px;
+  height: 24px;
+  border-radius: 99px;
+}
+
+.pba-button--medium {
+  font-size: 14px;
+  padding: 4px 24px;
+  height: 32px;
+  border-radius: 99px;
+}
+
+.pba-button--large {
+  font-size: 16px;
+  padding: 8px 32px;
+  height: 40px;
+  border-radius: 99px;
+}
+
+/* Primary variant */
+.pba-button--primary {
+  background-color: #317b74;
+  color: #ffffff;
+}
+
+.pba-button--primary:hover:not(.pba-button--disabled) {
+  background-color: #2a6b65;
+}
+
+.pba-button--primary:active:not(.pba-button--disabled) {
+  background-color: #245b56;
+}
+
+.pba-button--primary:focus:not(.pba-button--disabled) {
+  outline: 2px solid #317b74;
+  outline-offset: 2px;
+}
+
+/* Secondary variant */
+.pba-button--secondary {
+  background-color: transparent;
+  color: #317b74;
+  border: 1px solid #317b74;
+}
+
+.pba-button--secondary:hover:not(.pba-button--disabled) {
+  background-color: #f0f9f8;
+}
+
+.pba-button--secondary:active:not(.pba-button--disabled) {
+  background-color: #e0f3f1;
+}
+
+.pba-button--secondary:focus:not(.pba-button--disabled) {
+  outline: 2px solid #317b74;
+  outline-offset: 2px;
+}
+
+/* Tertiary variant */
+.pba-button--tertiary {
+  background-color: transparent;
+  color: #317b74;
+}
+
+.pba-button--tertiary:hover:not(.pba-button--disabled) {
+  background-color: #f0f9f8;
+}
+
+.pba-button--tertiary:active:not(.pba-button--disabled) {
+  background-color: #e0f3f1;
+}
+
+.pba-button--tertiary:focus:not(.pba-button--disabled) {
+  outline: 2px solid #317b74;
+  outline-offset: 2px;
+}
+
+/* Danger variant */
+.pba-button--danger {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.pba-button--danger:hover:not(.pba-button--disabled) {
+  background-color: #c82333;
+}
+
+.pba-button--danger:active:not(.pba-button--disabled) {
+  background-color: #bd2130;
+}
+
+.pba-button--danger:focus:not(.pba-button--disabled) {
+  outline: 2px solid #dc3545;
+  outline-offset: 2px;
+}
+
+/* Invisible variant */
+.pba-button--invisible {
+  background-color: transparent;
+  color: #6c757d;
+}
+
+.pba-button--invisible:hover:not(.pba-button--disabled) {
+  background-color: #f8f9fa;
+}
+
+.pba-button--invisible:active:not(.pba-button--disabled) {
+  background-color: #e9ecef;
+}
+
+.pba-button--invisible:focus:not(.pba-button--disabled) {
+  outline: 2px solid #6c757d;
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.pba-button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Focus styles for all variants */
+.pba-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
