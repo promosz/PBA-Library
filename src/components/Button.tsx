@@ -7,13 +7,13 @@ export interface ButtonProps {
    */
   variant?: 'primary' | 'secondary' | 'tertiary' | 'danger' | 'invisible';
   /**
+   * Button color scheme
+   */
+  color?: 'on' | 'off';
+  /**
    * Button size
    */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button state
-   */
-  state?: 'default' | 'hover' | 'pressed' | 'focus' | 'disabled';
+  size?: 'small' | 'medium' | 'large' | 'extra-large';
   /**
    * Button content
    */
@@ -37,8 +37,8 @@ export interface ButtonProps {
  */
 export const Button = ({
   variant = 'primary',
+  color = 'on',
   size = 'medium',
-  state = 'default',
   children,
   onClick,
   disabled = false,
@@ -48,8 +48,9 @@ export const Button = ({
   const buttonClasses = [
     'pba-button',
     `pba-button--${variant}`,
+    `pba-button--${color}`,
     `pba-button--${size}`,
-    disabled ? 'pba-button--disabled' : `pba-button--${state}`,
+    disabled ? 'pba-button--disabled' : '',
     className
   ].filter(Boolean).join(' ');
 
